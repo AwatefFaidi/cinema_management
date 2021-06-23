@@ -28,6 +28,7 @@ public class Projection {
 	@ManyToOne
 	private Film film;
 	@ManyToOne
+	@JsonProperty(access=Access.WRITE_ONLY)
 	private Salle salle;
 	@OneToMany(mappedBy="projection")
 	@JsonProperty(access=Access.WRITE_ONLY)
